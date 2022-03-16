@@ -11,7 +11,7 @@ use bdk::keys::DescriptorKey::Secret;
 use bdk::miniscript::miniscript::Segwitv0;
 use bdk::Wallet;
 use bdk::wallet::wallet_name_from_descriptor;
-
+use bdk::wallet::AddressIndex;
 use std::str::FromStr;
 
 #[tokio::main]
