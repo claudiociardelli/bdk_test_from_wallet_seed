@@ -71,7 +71,7 @@ fn get_descriptors_fr_menmonic_pwd(mnemonic: Mnemonic, password: Option<String>)
     // change: "m/84h/1h/0h/1" 
     let mut keys = Vec::new();
 
-    for path in ["m/84h/1h/0h/0", "m/84h/1h/0h/1"] {
+    for path in ["m/84h/0h/0h/0", "m/84h/0h/0h/1"] {
         let deriv_path: DerivationPath = DerivationPath::from_str(path).unwrap();
         let derived_xprv = &xprv.derive_priv(&secp, &deriv_path).unwrap();
         let origin: KeySource = (xprv.fingerprint(&secp), deriv_path);
