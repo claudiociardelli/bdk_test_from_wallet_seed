@@ -1,0 +1,14 @@
+[package]
+name = "bitcoin_core_rpc_demo"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# bdk = { version = "^0.10", default-features = false, features = ["all-keys", "key-value-db", "rpc"]}
+# bdk = "0.16.0"
+bdk = { version = "0.16.0", default-features = false, features = ["all-keys", "key-value-db", "rpc", "electrum"]}
+dirs-next = "2.0"
+bitcoin = { version = "0.27.1", package = "bitcoin" }
+tokio = { version = "1.0", features = ["full"] }
